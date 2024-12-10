@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-PNG</title>
+    <style>
+        nav {
+            background-color: rgb(167, 171, 175);
+            border: 2px solid black;
+            border-radius: 2px;
+            margin: auto;
+            padding: 10px;
+            margin: auto;
+        }
+
+        nav a {
+            border: 2px solid black;
+            border-radius: 5px;
+            text-decoration: none;
+            background-color: aliceblue;
+            color: black;
+            padding: 8px;
+        }
+
+        nav a:hover {
+            color: rgb(116, 116, 116);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1>Tables Assignement</h1>
+        <a href="index.html">Nested Table</a>
+        <a href="3png.html">Time Table</a>
+        <a href="blank.html">blank</a>
+        <a href="tablepng.html">Table.PNG</a>
+        <a href="img5.html">Image-5</a>
+        <a href="marksheet.html">MarkSheet</a>
+    </nav>
+    <h1>Nested Tables</h1>
+    <center>
+        <table border="1" style="text-align: left; width: 50%;">
+            <tr>
+                <th>Header column 1</th>
+                <th>Header column 2</th>
+                <th>Header column 3</th>
+                <th>Header column 4</th>
+            </tr>
+            <tr>
+                <td>Row 2 - Item 1</td>
+                <td>Row 2 - Item 2</td>
+                <td rowspan="2">
+                    Row 2: Nested Table 1
+                    <table>
+                        <tr>
+                            <th>Row 1 Header</th>
+                            <th>Item</th>
+                        </tr>
+                        <tr>
+                            <th>Row 2 Header</th>
+                            <th>Item</th>
+                        </tr>
+                        <tr>
+                            <th>Row 3 Header</th>
+                            <th>Item</th>
+                        </tr>
+                    </table>
+                </td>
+                <td>Row 2 - Item 4<br>A second line</td>
+            </tr>
+            <tr>
+                <td>Row 3: Nested Table 2
+                    <table>
+                        <tr>
+                            <th>Row 1 Header</th>
+                            <td>Item</td>
+                        </tr>
+                        <tr>
+                            <th>Row 2 Header</th>
+                            <td>Item</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Row 3 - Item 2</td>
+                <td>Row 3 - Item 3</td>
+            </tr>
+            <tr>
+                <td>Row 4 - Item 1</td>
+                <td>Row 4 - Item 2</td>
+                <td>Row 4 - Item 3</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="4">Row 5 - Last row of outer table</td>
+            </tr>
+        </table>
+    </center>
+</body>
+
+</html>
